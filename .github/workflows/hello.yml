@@ -12,3 +12,17 @@ jobs:
       - name: Say hello
         run: |
           echo "Hello World!"
+  run_date_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show current date
+        run: |
+          echo "Current date and time:"
+          date
+  ls_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: List files in the repository
+        run: |
+          echo "Listing files in the repository:"
+          ls -la
