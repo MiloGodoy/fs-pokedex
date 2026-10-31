@@ -15,6 +15,15 @@ module.exports = [
   },
   js.configs.recommended,
   {
+    files: ['playwright.config.js'],
+    languageOptions: {
+      sourceType: 'module',
+      globals: {
+        ...globals.node
+      }
+    }
+  },
+  {
     files: ['app.js', 'jest.setup.js'],
     languageOptions: {
       ecmaVersion: 2018,
